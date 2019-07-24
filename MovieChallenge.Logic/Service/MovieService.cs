@@ -8,6 +8,7 @@ using MovieChallenge.Logic.Interface;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
@@ -134,7 +135,8 @@ namespace MovieChallenge.Logic.Service
                     Title = result.Title,
                     Website = result.Website,
                     Writer = result.Writer,
-                    Year = result.Year
+                    Year = result.Year,
+                    Ratings = GetMovieRatings(result.Ratings)
                 });
             }
             else if (entityType == "series")
@@ -159,7 +161,8 @@ namespace MovieChallenge.Logic.Service
                     Title = result.Title,
                     Writer = result.Writer,
                     Year = result.Year,
-                    totalSeasons = result.totalSeasons
+                    totalSeasons = result.totalSeasons,
+                    Ratings = GetSerieRatings(result.Ratings)
                 });
             }
             else if (entityType == "episode")
@@ -186,9 +189,40 @@ namespace MovieChallenge.Logic.Service
                     Year = result.Year,
                     Season = result.Season,
                     seriesID = result.seriesID,
-                    EpisodeNo = result.Episode
+                    EpisodeNo = result.Episode,
+                    Ratings = GetEpisodeRatings(result.Ratings)
                 });
             }
+        }
+
+        private List<EpisodeRating> GetEpisodeRatings(dynamic ratings)
+        {
+            var rating = new List<EpisodeRating>();
+            foreach (dynamic item in ratings)
+            {
+                rating.Add(new EpisodeRating { Source = item.Source, Value = item.Value });
+            }
+            return rating;
+        }
+
+        private List<SerieRating> GetSerieRatings(dynamic ratings)
+        {
+            var rating = new List<SerieRating>();
+            foreach (dynamic item in ratings)
+            {
+                rating.Add(new SerieRating { Source = item.Source, Value = item.Value });
+            }
+            return rating;
+        }
+
+        private List<MovieRating> GetMovieRatings(dynamic ratings)
+        {
+            var rating = new List<MovieRating>();
+            foreach(dynamic item in ratings)
+            {
+                rating.Add(new MovieRating { Source=item.Source, Value = item.Value });
+            }
+            return rating;
         }
 
         private async Task AddToCacheAsync(string id, object o)
