@@ -1,0 +1,291 @@
+2019-07-22 03:17:40.085 +03:00 [INF] Heating up...
+2019-07-23 00:31:41.002 +03:00 [INF] Heating up...
+2019-07-23 00:33:48.933 +03:00 [INF] Heating up...
+2019-07-23 01:33:23.682 +03:00 [INF] Heating up...
+2019-07-23 01:35:51.028 +03:00 [INF] Heating up...
+2019-07-23 14:09:03.531 +03:00 [INF] Heating up...
+2019-07-23 14:20:58.580 +03:00 [INF] Heating up...
+2019-07-23 14:21:02.578 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: HTTP method "GET" & path "api/Movie" overloaded by actions - MovieChallenge.Api.Controllers.MovieController.Search (MovieChallenge.Api),MovieChallenge.Api.Controllers.MovieController.Detail (MovieChallenge.Api). Actions require unique method/path combination for Swagger 2.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItems(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-23 14:21:46.015 +03:00 [INF] Heating up...
+2019-07-23 14:21:50.214 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: HTTP method "GET" & path "api/Movie" overloaded by actions - MovieChallenge.Api.Controllers.MovieController.Search (MovieChallenge.Api),MovieChallenge.Api.Controllers.MovieController.Detail (MovieChallenge.Api). Actions require unique method/path combination for Swagger 2.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItems(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-23 14:24:15.656 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: HTTP method "GET" & path "api/Movie" overloaded by actions - MovieChallenge.Api.Controllers.MovieController.Search (MovieChallenge.Api),MovieChallenge.Api.Controllers.MovieController.Detail (MovieChallenge.Api). Actions require unique method/path combination for Swagger 2.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItems(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-23 14:28:06.706 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: HTTP method "GET" & path "api/Movie" overloaded by actions - MovieChallenge.Api.Controllers.MovieController.Search (MovieChallenge.Api),MovieChallenge.Api.Controllers.MovieController.Detail (MovieChallenge.Api). Actions require unique method/path combination for Swagger 2.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItems(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-23 14:29:32.565 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: HTTP method "GET" & path "api/Movie" overloaded by actions - MovieChallenge.Api.Controllers.MovieController.Search (MovieChallenge.Api),MovieChallenge.Api.Controllers.MovieController.Detail (MovieChallenge.Api). Actions require unique method/path combination for Swagger 2.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItems(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-23 14:31:42.095 +03:00 [INF] Heating up...
+2019-07-23 14:34:24.657 +03:00 [INF] Heating up...
+2019-07-23 14:34:51.823 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. SocketFailure on PING
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectAsync(String configuration, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 799
+   at Microsoft.Extensions.Caching.Redis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at MovieChallenge.Api.Controllers.MovieController.Detail(String id) in C:\Users\serkan.gulec\source\repos\MovieChallenge\MovieChallenge.Api\Controllers\MovieController.cs:line 41
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-23 14:36:51.268 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisServerException: ERR unknown command 'EVAL'
+   at Microsoft.Extensions.Caching.Redis.RedisExtensions.HashMemberGetAsync(IDatabase cache, String key, String[] members)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at MovieChallenge.Api.Controllers.MovieController.Detail(String id) in C:\Users\serkan.gulec\source\repos\MovieChallenge\MovieChallenge.Api\Controllers\MovieController.cs:line 41
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-23 14:37:10.319 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisServerException: ERR unknown command 'EVAL'
+   at Microsoft.Extensions.Caching.Redis.RedisExtensions.HashMemberGetAsync(IDatabase cache, String key, String[] members)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at MovieChallenge.Api.Controllers.MovieController.Detail(String id) in C:\Users\serkan.gulec\source\repos\MovieChallenge\MovieChallenge.Api\Controllers\MovieController.cs:line 41
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-23 14:38:31.755 +03:00 [INF] Heating up...
+2019-07-23 14:55:19.147 +03:00 [INF] Heating up...
+2019-07-23 15:00:32.231 +03:00 [INF] Heating up...
+2019-07-23 15:05:02.818 +03:00 [INF] Heating up...
+2019-07-23 15:07:22.420 +03:00 [INF] Heating up...
+2019-07-23 15:09:02.539 +03:00 [INF] Heating up...
+2019-07-23 16:49:30.310 +03:00 [INF] Heating up...
+2019-07-23 16:54:22.105 +03:00 [INF] Heating up...
+2019-07-23 16:55:02.869 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s); to create a disconnected multiplexer, disable AbortOnConnectFail. SocketFailure on PING
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectAsync(String configuration, TextWriter log) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 799
+   at Microsoft.Extensions.Caching.Redis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.Redis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at MovieChallenge.Api.Controllers.MovieController.Detail(String id) in C:\Users\serkan.gulec\source\repos\MovieChallenge\MovieChallenge.Api\Controllers\MovieController.cs:line 44
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-23 17:03:56.931 +03:00 [INF] Heating up...
+2019-07-23 17:58:57.408 +03:00 [INF] Heating up...
+2019-07-23 18:37:40.111 +03:00 [INF] Heating up...
+2019-07-23 22:46:13.413 +03:00 [INF] Heating up...
+2019-07-24 02:16:27.816 +03:00 [INF] Heating up...
+2019-07-24 02:17:32.191 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at MovieChallenge.Logic.Service.MovieService.ClearCache() in C:\Users\serkan.gulec\source\repos\MovieChallenge\MovieChallenge.Logic\Service\MovieService.cs:line 37
+   at MovieChallenge.Api.Controllers.MovieController.ClearCache() in C:\Users\serkan.gulec\source\repos\MovieChallenge\MovieChallenge.Api\Controllers\MovieController.cs:line 67
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-24 02:18:18.427 +03:00 [INF] Heating up...
+2019-07-24 02:19:01.087 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: The specified endpoint is not defined
+Parameter name: endpoint
+   at StackExchange.Redis.ConnectionMultiplexer.GetServer(EndPoint endpoint, Object asyncState) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 1094
+   at MovieChallenge.Logic.Service.MovieService.ClearCache() in C:\Users\serkan.gulec\source\repos\MovieChallenge\MovieChallenge.Logic\Service\MovieService.cs:line 39
+   at MovieChallenge.Api.Controllers.MovieController.ClearCache() in C:\Users\serkan.gulec\source\repos\MovieChallenge\MovieChallenge.Api\Controllers\MovieController.cs:line 67
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-24 02:21:56.732 +03:00 [INF] Heating up...
+2019-07-24 02:22:31.020 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisCommandException: This operation is not available unless admin mode is enabled: FLUSHALL
+   at StackExchange.Redis.ConnectionMultiplexer.CheckMessage(Message message) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 481
+   at StackExchange.Redis.RedisServer.ExecuteAsync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisServer.cs:line 559
+   at MovieChallenge.Logic.Service.MovieService.ClearCache() in C:\Users\serkan.gulec\source\repos\MovieChallenge\MovieChallenge.Logic\Service\MovieService.cs:line 41
+   at MovieChallenge.Api.Controllers.MovieController.ClearCache() in C:\Users\serkan.gulec\source\repos\MovieChallenge\MovieChallenge.Api\Controllers\MovieController.cs:line 67
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-24 02:27:20.560 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisCommandException: This operation is not available unless admin mode is enabled: FLUSHALL
+   at StackExchange.Redis.ConnectionMultiplexer.CheckMessage(Message message) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\ConnectionMultiplexer.cs:line 481
+   at StackExchange.Redis.RedisServer.ExecuteAsync[T](Message message, ResultProcessor`1 processor, ServerEndPoint server) in c:\code\StackExchange.Redis\StackExchange.Redis\StackExchange\Redis\RedisServer.cs:line 559
+   at MovieChallenge.Logic.Service.MovieService.ClearCache()
+   at MovieChallenge.Api.Controllers.MovieController.ClearCache() in C:\Users\serkan.gulec\source\repos\MovieChallenge\MovieChallenge.Api\Controllers\MovieController.cs:line 67
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-24 02:28:20.404 +03:00 [INF] Heating up...
