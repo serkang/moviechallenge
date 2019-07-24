@@ -76,6 +76,7 @@ namespace MovieChallenge.Logic.Service
                 if (episodeResult != null)
                 {
                     result = episodeResult;
+                    result.Episode = result.EpisodeNo;
                     result.type = "episode";
                     sw.Stop();
                     Debug.WriteLine($"From db with cost of {sw.ElapsedMilliseconds} ms");
