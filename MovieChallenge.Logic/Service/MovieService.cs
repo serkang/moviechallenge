@@ -8,7 +8,6 @@ using MovieChallenge.Logic.Interface;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
@@ -92,6 +91,10 @@ namespace MovieChallenge.Logic.Service
                     if (!detailResult.Contains("Incorrect IMDb ID")) await AddResultToDbAsync(result);
                     result = JsonConvert.DeserializeObject<dynamic>(detailResult);
                 }
+                else
+                {
+                    await AddToCacheAsync(id, result);
+                }
             }
             else
             {
@@ -134,7 +137,7 @@ namespace MovieChallenge.Logic.Service
                     Year = result.Year
                 });
             }
-            else if(entityType == "series")
+            else if (entityType == "series")
             {
                 await _context.Series.AddAsync(new Serie
                 {
@@ -158,7 +161,8 @@ namespace MovieChallenge.Logic.Service
                     Year = result.Year,
                     totalSeasons = result.totalSeasons
                 });
-            } else if(entityType == "episode")
+            }
+            else if (entityType == "episode")
             {
                 await _context.Episodes.AddAsync(new Episode
                 {
@@ -187,17 +191,17 @@ namespace MovieChallenge.Logic.Service
             }
         }
 
-            private async Task AddToCacheAsync(string id, object o)
-            {
-                await _cache.SetStringAsync(id, JsonConvert.SerializeObject(o), _cacheOptions);
-            }
+        private async Task AddToCacheAsync(string id, object o)
+        {
+            await _cache.SetStringAsync(id, JsonConvert.SerializeObject(o), _cacheOptions);
+        }
 
-            public async Task ClearCache()
-            {
-                var redis = await ConnectionMultiplexer.ConnectAsync(_configuration["Redis"] + ",allowAdmin=true");
-                var endPoints = redis.GetEndPoints();
-                var server = redis.GetServer(endPoints[0]);
-                await server.FlushAllDatabasesAsync();
-            }
+        public async Task ClearCache()
+        {
+            var redis = await ConnectionMultiplexer.ConnectAsync(_configuration["Redis"] + ",allowAdmin=true");
+            var endPoints = redis.GetEndPoints();
+            var server = redis.GetServer(endPoints[0]);
+            await server.FlushAllDatabasesAsync();
         }
     }
+}
