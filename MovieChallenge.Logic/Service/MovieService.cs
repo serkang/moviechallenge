@@ -89,8 +89,8 @@ namespace MovieChallenge.Logic.Service
                     client.Dispose();
                     sw.Stop();
                     Debug.WriteLine($"From omdb with cost of {sw.ElapsedMilliseconds} ms");
-                    if (!detailResult.Contains("Incorrect IMDb ID")) await AddResultToDbAsync(result);
                     result = JsonConvert.DeserializeObject<dynamic>(detailResult);
+                    if (!detailResult.Contains("Incorrect IMDb ID")) await AddResultToDbAsync(result);
                 }
                 else
                 {
@@ -109,7 +109,7 @@ namespace MovieChallenge.Logic.Service
 
         private async Task AddResultToDbAsync(dynamic result)
         {
-            string entityType = result.type;
+            string entityType = result.Type;
             if (entityType == "movie")
             {
                 await _context.Movies.AddAsync(new Movie
@@ -193,6 +193,10 @@ namespace MovieChallenge.Logic.Service
                     Ratings = GetEpisodeRatings(result.Ratings)
                 });
             }
+
+            await _context.SaveChangesAsync();
+            string id = result.imdbID;
+            await AddToCacheAsync(id, result);
         }
 
         private List<EpisodeRating> GetEpisodeRatings(dynamic ratings)
