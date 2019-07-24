@@ -27,7 +27,7 @@ class Detail extends Component {
         if (movieDetails && movieDetails.Error) {
             return (
                 <Row>
-                    <Col md="12" className="text-center">{movieDetails.Error}</Col>
+                    <Col md="12" className="text-center">{movieDetails.Error}<br /><a href="/" className="btn btn-primary"> &lt;-Back </a></Col>
                 </Row>
                 );
         } else {

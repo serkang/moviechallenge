@@ -6,10 +6,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MovieChallenge.Common\MovieChallenge.Common.csproj" />
+    <ProjectReference Include="..\MovieChallenge.Data\MovieChallenge.Data.csproj" />
   </ItemGroup>
 
 </Project>

@@ -15,21 +15,15 @@ namespace MovieChallenge.Api.Controllers
     [ApiController]
     public class MovieController : Controller
     {
-        private readonly DistributedCacheEntryOptions _cacheOptions;
+        //private readonly DistributedCacheEntryOptions _cacheOptions;
         
         private readonly IMovieService _movieService;
-        private readonly IDistributedCache _cache;
 
-        public MovieController(IDistributedCache cache, IMovieService movieService)
-        {
-            _cache = cache;
-            _cacheOptions = new DistributedCacheEntryOptions
-            {
-                SlidingExpiration = TimeSpan.FromMinutes(12)
-            };
+        public MovieController(IMovieService movieService)
+        {            
             _movieService = movieService;
         }
-
+        
         [Route("api/search")]
         [HttpGet]
         public async Task<string> Search(string keyword)
@@ -39,25 +33,9 @@ namespace MovieChallenge.Api.Controllers
 
         [Route("api/detail")]
         [HttpGet]
-        public async Task<string> Detail(string id)
+        public async Task<JsonResult> Detail(string id)
         {
-            Stopwatch sw = new Stopwatch();
-            sw.Start();
-
-            var cacheResult = await _cache.GetStringAsync(id);
-
-            if (string.IsNullOrEmpty(cacheResult))
-            {
-                var movieDetail = await _movieService.DetailAsync(id);
-                if(!movieDetail.Contains("Error:")) await _cache.SetStringAsync(id, movieDetail, _cacheOptions);
-                sw.Stop();
-                Debug.WriteLine($"From omdb with cost of {sw.ElapsedMilliseconds} ms");
-                return movieDetail;
-            }
-            
-            sw.Stop();
-            Debug.WriteLine($"From cache with cost of {sw.ElapsedMilliseconds} ms");
-            return cacheResult;
+            return Json(await _movieService.DetailAsync(id));
         }
 
         [Route("api/clearcache")]

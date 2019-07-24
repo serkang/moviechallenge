@@ -8,7 +8,7 @@ namespace MovieChallenge.Logic.Interface
     public interface IMovieService
     {
         Task<string> SearchAsync(string keyword);
-        Task<string> DetailAsync(string id);
+        Task<object> DetailAsync(string id);
         Task ClearCache();
     }
 }
