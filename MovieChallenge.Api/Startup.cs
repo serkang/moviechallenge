@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Hangfire;
+using Hangfire.Common;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -80,10 +82,12 @@ namespace MovieChallenge.Api
                 option.Configuration = Configuration["Redis"];
                 option.InstanceName = "movieChallenge";
             });
+
+            services.AddHangfire(x=>x.UseSqlServerStorage(Configuration.GetConnectionString(Configuration["AppConfig:ActiveBranch"])));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IHttpContextAccessor accessor)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IHttpContextAccessor accessor, IRecurringJobManager recurringJobs)
         {
             if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
             HttpHelper.Configure(accessor, Configuration);
@@ -93,8 +97,13 @@ namespace MovieChallenge.Api
             app.UseSwagger();
             app.UseSwaggerUI(s => { s.SwaggerEndpoint("/swagger/v1/swagger.json", "Movie Challenge API v1"); });
 
+            app.UseHangfireDashboard();
+            app.UseHangfireServer();
+
             //app.UseHttpsRedirection();
             app.UseMvc();
+
+            recurringJobs.AddOrUpdate("UpdateMovies", Job.FromExpression<IMovieService>(x=>x.UpdateMovies()), "*/10 * * * *");
         }
     }
 }

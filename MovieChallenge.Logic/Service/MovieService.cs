@@ -222,9 +222,9 @@ namespace MovieChallenge.Logic.Service
         private List<MovieRating> GetMovieRatings(dynamic ratings)
         {
             var rating = new List<MovieRating>();
-            foreach(dynamic item in ratings)
+            foreach (dynamic item in ratings)
             {
-                rating.Add(new MovieRating { Source=item.Source, Value = item.Value });
+                rating.Add(new MovieRating { Source = item.Source, Value = item.Value });
             }
             return rating;
         }
@@ -240,6 +240,110 @@ namespace MovieChallenge.Logic.Service
             var endPoints = redis.GetEndPoints();
             var server = redis.GetServer(endPoints[0]);
             await server.FlushAllDatabasesAsync();
+        }
+
+        public void UpdateMovies()
+        {
+            var movies = _context.Movies.Include(x => x.Ratings).ToList();
+            foreach (var m in movies)
+            {
+                dynamic result = DetailFromOmdbAsync(m.imdbID).Result;
+
+                m.Actors = result.Actors;
+                m.Awards = result.Awards;
+                m.BoxOffice = result.BoxOffice;
+                m.Country = result.Country;
+                m.Director = result.Director;
+                m.Dvd = result.DVD;
+                m.Genre = result.Genre;
+                m.imdbRating = result.imdbRating;
+                m.imdbVotes = result.imdbVotes;
+                m.Language = result.Language;
+                m.Metascore = result.Metascore;
+                m.Plot = result.Plot;
+                m.Poster = result.Poster;
+                m.Production = result.Production;
+                m.Rated = result.Rated;
+                m.Released = result.Released;
+                m.Runtime = result.Runtime;
+                m.Title = result.Title;
+                m.Website = result.Website;
+                m.Writer = result.Writer;
+                m.Year = result.Year;
+                m.Ratings = GetMovieRatings(result.Ratings);
+
+                _context.Movies.Update(m);
+            }
+
+            var series = _context.Series.Include(x => x.Ratings).ToList();
+            foreach (var s in series)
+            {
+                dynamic result = DetailFromOmdbAsync(s.imdbID).Result;
+
+                s.Actors = result.Actors;
+                s.Awards = result.Awards;
+                s.Country = result.Country;
+                s.Director = result.Director;
+                s.Genre = result.Genre;
+                s.imdbID = result.imdbID;
+                s.imdbRating = result.imdbRating;
+                s.imdbVotes = result.imdbVotes;
+                s.Language = result.Language;
+                s.Metascore = result.Metascore;
+                s.Plot = result.Plot;
+                s.Poster = result.Poster;
+                s.Rated = result.Rated;
+                s.Released = result.Released;
+                s.Runtime = result.Runtime;
+                s.Title = result.Title;
+                s.Writer = result.Writer;
+                s.Year = result.Year;
+                s.totalSeasons = result.totalSeasons;
+                s.Ratings = GetSerieRatings(result.Ratings);
+
+                _context.Series.Update(s);
+            }
+
+            var episodes = _context.Episodes.Include(x => x.Ratings).ToList();
+            foreach (var e in episodes)
+            {
+                dynamic result = DetailFromOmdbAsync(e.imdbID).Result;
+
+                e.Actors = result.Actors;
+                e.Awards = result.Awards;
+                e.Country = result.Country;
+                e.Director = result.Director;
+                e.Genre = result.Genre;
+                e.imdbID = result.imdbID;
+                e.imdbRating = result.imdbRating;
+                e.imdbVotes = result.imdbVotes;
+                e.Language = result.Language;
+                e.Metascore = result.Metascore;
+                e.Plot = result.Plot;
+                e.Poster = result.Poster;
+                e.Rated = result.Rated;
+                e.Released = result.Released;
+                e.Runtime = result.Runtime;
+                e.Title = result.Title;
+                e.Writer = result.Writer;
+                e.Year = result.Year;
+                e.Season = result.Season;
+                e.seriesID = result.seriesID;
+                e.EpisodeNo = result.Episode;
+                e.Ratings = GetEpisodeRatings(result.Ratings);
+
+                _context.Episodes.Update(e);
+            }
+
+            _context.SaveChanges();
+        }
+
+        public async Task<dynamic> DetailFromOmdbAsync(string id)
+        {
+            var client = new HttpClient();
+            var detailResult = await client.GetStringAsync($"http://www.omdbapi.com/?i={id}&apikey={HttpHelper.ApiKey}");
+            client.Dispose();
+            return JsonConvert.DeserializeObject<dynamic>(detailResult);
         }
     }
 }

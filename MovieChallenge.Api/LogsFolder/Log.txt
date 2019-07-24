@@ -486,3 +486,64 @@ System.TypeLoadException: Could not load type 'Invalid_Token.0x02000000' from as
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2019-07-24 13:02:12.726 +03:00 [INF] Heating up...
 2019-07-24 13:08:28.720 +03:00 [INF] Heating up...
+2019-07-24 15:23:15.262 +03:00 [INF] Heating up...
+2019-07-24 15:23:23.690 +03:00 [INF] Start installing Hangfire SQL objects...
+2019-07-24 15:23:25.959 +03:00 [INF] Hangfire SQL objects installed.
+2019-07-24 15:23:26.345 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: MSKK-YYB-LT5642\SQLEXPRESS@Omdbnet'
+2019-07-24 15:23:26.346 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2019-07-24 15:23:26.347 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2019-07-24 15:23:27.904 +03:00 [INF] Server mskk-yyb-lt5642:5528:508ff9e0 successfully announced in 1377,3769 ms
+2019-07-24 15:23:27.975 +03:00 [INF] Server mskk-yyb-lt5642:5528:508ff9e0 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2019-07-24 15:23:29.759 +03:00 [INF] Server mskk-yyb-lt5642:5528:508ff9e0 all the dispatchers started
+2019-07-24 15:25:25.014 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MovieChallenge.Data.AppDbContext'.
+System.InvalidOperationException: Invalid attempt to call ReadAsync when reader is closed.
+   at System.Data.Common.ADP.ExceptionWithStackTrace(Exception e)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.AsyncSelectEnumerable`2.AsyncSelectEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+System.InvalidOperationException: Invalid attempt to call ReadAsync when reader is closed.
+   at System.Data.Common.ADP.ExceptionWithStackTrace(Exception e)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.AsyncSelectEnumerable`2.AsyncSelectEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2019-07-24 15:28:31.370 +03:00 [INF] Heating up...
+2019-07-24 15:28:46.002 +03:00 [INF] Start installing Hangfire SQL objects...
+2019-07-24 15:28:48.564 +03:00 [INF] Hangfire SQL objects installed.
+2019-07-24 15:28:48.850 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: MSKK-YYB-LT5642\SQLEXPRESS@Omdbnet'
+2019-07-24 15:28:48.859 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2019-07-24 15:28:48.860 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2019-07-24 15:28:51.148 +03:00 [INF] Server mskk-yyb-lt5642:1580:4553fca1 successfully announced in 2051,0953 ms
+2019-07-24 15:28:51.197 +03:00 [INF] Server mskk-yyb-lt5642:1580:4553fca1 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2019-07-24 15:28:52.466 +03:00 [INF] Server mskk-yyb-lt5642:1580:4553fca1 all the dispatchers started
+2019-07-24 15:38:46.978 +03:00 [INF] Heating up...
+2019-07-24 15:39:02.634 +03:00 [INF] Start installing Hangfire SQL objects...
+2019-07-24 15:39:06.145 +03:00 [INF] Hangfire SQL objects installed.
+2019-07-24 15:39:06.544 +03:00 [INF] Starting Hangfire Server using job storage: 'SQL Server: MSKK-YYB-LT5642\SQLEXPRESS@Omdbnet'
+2019-07-24 15:39:06.545 +03:00 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:15.
+2019-07-24 15:39:06.546 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2019-07-24 15:39:09.122 +03:00 [INF] Server mskk-yyb-lt5642:12640:8fb2dc36 successfully announced in 2314,9454 ms
+2019-07-24 15:39:09.229 +03:00 [INF] Server mskk-yyb-lt5642:12640:8fb2dc36 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2019-07-24 15:39:09.423 +03:00 [INF] 2 servers were removed due to timeout
+2019-07-24 15:39:10.482 +03:00 [INF] Server mskk-yyb-lt5642:12640:8fb2dc36 all the dispatchers started

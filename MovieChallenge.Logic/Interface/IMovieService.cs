@@ -9,6 +9,8 @@ namespace MovieChallenge.Logic.Interface
     {
         Task<string> SearchAsync(string keyword);
         Task<object> DetailAsync(string id);
+        Task<dynamic> DetailFromOmdbAsync(string id);
         Task ClearCache();
+        void UpdateMovies();
     }
 }
